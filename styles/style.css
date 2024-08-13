@@ -1,0 +1,75 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
+
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(3, 0, 39, .8);
+}
+.content {
+  margin: 50px auto 0;
+  padding: 0 20px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .7);
+  border-radius: 10px;
+}
+.input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.task.completed {
+  text-decoration: line-through;
+  color: #ccc;
+}
+.task-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+#taskList {
+  width: 500px;
+}
+
+.button-group {
+  margin: 20px auto;
+  display: flex;
+  gap: 10px;
+}
+
+.delete-btn,
+.addBtn,
+.btn {
+  padding: 5px 10px;
+  background: linear-gradient(#ccc, #fff, #ccc);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.delete-btn:active,
+.addBtn:active,
+.btn:active {
+  background: linear-gradient(#fff, #ccc, #fff);
+}
+.delete-btn:hover,
+.addBtn:hover,
+.btn:hover {
+  cursor: pointer;
+}
